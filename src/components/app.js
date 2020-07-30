@@ -1,5 +1,6 @@
 import React from "react";
 
+import TodoList from "./todoList.jsx";
 import "./styles.css";
 
 class App extends React.Component {
@@ -57,6 +58,7 @@ class App extends React.Component {
           />
           <input type="submit" value="+" />
         </form>
+        <TodoList list={this.state.todos} />
       </div>
     );
   }
