@@ -45,6 +45,22 @@ class App extends React.Component {
     );
   }
 
+  deleteTodo(index) {
+    let currentState = this.state.todos;
+    currentState.splice(index, 1);
+    this.setState({ todos: currentState }, () => {
+      localStorage.setItem("todos", JSON.stringify(this.state.todos));
+    });
+  }
+
+  onCheckboxChange(index) {
+    let currentState = this.state.todos;
+    currentState[index].isCompleted = !currentState[index].isCompleted;
+    this.setState({ todos: currentState }, () => {
+      localStorage.setItem("todos", JSON.stringify(this.state.todos));
+    });
+  }
+
   render() {
     return (
       <div className="container">
@@ -58,7 +74,11 @@ class App extends React.Component {
           />
           <input type="submit" value="+" />
         </form>
-        <TodoList list={this.state.todos} />
+        <TodoList
+          list={this.state.todos}
+          onDeleteRequest={this.deleteTodo.bind(this)}
+          onCheckboxStatusChange={this.onCheckboxChange.bind(this)}
+        />
       </div>
     );
   }
