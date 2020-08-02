@@ -1,0 +1,51 @@
+li {
+  list-style-type: none;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 40px 10px 20px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+span {
+  padding-left: 20px;
+  word-break: break-all;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #e5e2e2;
+}
+
+.deleteButton {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  margin: auto 0;
+  font-size: 30px;
+  font-family: monospace;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.deleteButton svg {
+  fill: #cc9a9a;
+}
+.deleteButton:hover svg {
+  fill: #ca6a6a;
+}
+
+.deleteButton:focus {
+  outline: none;
+}
+
+li:hover .deleteButton {
+  display: initial;
+  cursor: pointer;
+}

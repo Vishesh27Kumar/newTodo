@@ -1,0 +1,15 @@
+input[type="text"] {
+  width: 100%;
+  padding: 16px 16px 16px 70px;
+  font-size: 24px;
+  border: 1px solid #e6e6e6;
+}
+
+input[type="text"]::placeholder {
+  font-style: italic;
+  color: #e5e2e2;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}

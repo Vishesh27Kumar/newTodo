@@ -4,7 +4,7 @@
   "description": "Todo-react-app with webpack and babel",
   "main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --port 4000 --mode development",
+    "start": "webpack-dev-server --port 4000 --mode development --historyApiFallback true",
     "build": "webpack --mode production"
   },
   "author": "Vishesh",
@@ -12,12 +12,14 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
+    "@svgr/webpack": "^5.4.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.1.0",
     "html-webpack-plugin": "^4.3.0",

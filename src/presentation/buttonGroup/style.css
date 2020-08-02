@@ -1,0 +1,17 @@
+a {
+  color: #777;
+  text-decoration: none;
+  padding: 3px 7px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  margin: 3px;
+}
+
+.selected {
+  border-color: rgba(175, 47, 47, 0.2);
+}
+
+a:hover {
+  border-color: rgba(175, 47, 47, 0.1);
+}
