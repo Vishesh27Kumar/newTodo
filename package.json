@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --port 4000 --mode development --historyApiFallback true",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production --historyApiFallback true"
   },
   "author": "Vishesh",
   "license": "MIT",
