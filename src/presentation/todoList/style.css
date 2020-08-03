@@ -11,24 +11,30 @@
 }
 
 .allCheckBox::after {
-  content: "";
+  box-sizing: border-box;
+  text-align: center;
+  content: "\21d3";
   display: inline-block;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.4);
   font-size: 22px;
+  font-weight: bold;
+  padding-top: 3px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .allCheckBox:checked::after {
-  content: "\2714";
+  box-sizing: border-box;
   text-align: center;
-  font-size: 22px;
+  content: "\21d3";
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin-bottom: 4px;
-  border-radius: 50%;
-  color: rgba(0, 255, 0, 0.288);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 22px;
+  font-weight: bold;
+  padding-top: 3px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 22px;
 }
